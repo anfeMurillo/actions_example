@@ -5,11 +5,7 @@ on:
         branches: ["master"]
 
 jobs:
-    deploy-actions-example:
+    deploy-actions_example: #nombre del job
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v4
-            - run: echo "Hacemos Pull"
-            - run: echo "Correr migraciones"
-            - run: echo "Generar binario"
-            - run: echo "Otra cosa"
+            - run: python --version
